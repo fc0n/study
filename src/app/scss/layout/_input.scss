@@ -1,0 +1,16 @@
+input{
+    width: 400px;
+    padding: 0.5rem;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 3px;
+    outline: 0;
+}
+
+input:focus{
+    background-color: #e8f6f69d ;
+}
+
+.containerInputs app-input{
+    width: 250px;
+    height: 500px;
+}

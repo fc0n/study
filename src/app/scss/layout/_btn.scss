@@ -1,0 +1,29 @@
+@import "../variables";
+
+.boxButton button{
+    width: 390px;
+    padding: 0.8rem;
+    color: white;
+    background-color: $button;
+    border: none;
+    border-radius: 6px;
+}
+
+.boxButton button:active{
+    background-color: $button-active;
+}
+
+.boxButton p{
+    margin: 0.9rem;
+    color: grey;
+}
+
+.boxButton a{
+    font-weight: 600;
+    text-decoration: none;
+    color: $link;
+}
+
+.boxButton a:hover{
+    color: $link-active;
+}

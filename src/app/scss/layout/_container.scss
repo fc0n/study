@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.field{
+    align-self: center;
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxInput{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

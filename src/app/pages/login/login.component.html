@@ -7,22 +7,22 @@
         <div class="containerInputs">
             <div>
                 <h3>Email</h3>
-                <div class="boxInput" >
-                    <input type="text" placeholder="Email">
-                    <img src="../../../assets/image/email.png" alt="imagem-input" >
+                <div class="boxInput">
+                    <input type="text" placeholder="Email" [(ngModel)]="email" [class.error]="!success">
+                    <img src="../../../assets/image/email.png" alt="imagem-input" *ngIf="!email">
                 </div>
             </div>
             <div>
                 <h3>Senha</h3>
                 <div class="boxInput">
-                    <input type="password" placeholder="Senha">
-                    <img src="../../../assets/image/lock.png" alt="imagem-input">
+                    <input type="password" placeholder="Senha" [(ngModel)]="password" [class.error]="!success">
+                    <img src="../../../assets/image/lock.png" alt="imagem-input" *ngIf="!password">
                 </div>
+                <p class="alertError" [class.alertErrorActive]="!success">Email ou senha invalidos!</p>
             </div>
-            
         </div>
         <div class="boxButton">
-            <button>Entrar</button>
+            <button (click)="onSignIn(email, password)">Entrar</button>
             <p>Ainda não possui conta? 
                 <a routerLink="/register">Crie agora!</a>
             </p>

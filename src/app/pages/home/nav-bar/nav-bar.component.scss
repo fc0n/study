@@ -14,6 +14,35 @@
     justify-content: space-around;
 }
 
+.containerLogo{
+    max-width: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.containerLogo img{
+    width: 30px;
+}
+
+.containerNavBar{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.gear{
+    width: 30px;
+    cursor: pointer;
+}
+
+.tilteNav{
+    color: $white;
+    font-weight: 400;
+}
+
 app-nav-menu{
     position: absolute;
 } 

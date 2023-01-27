@@ -8,27 +8,28 @@
             <div>
                 <h3>Nome</h3>
                 <div class="boxInput">
-                    <input type="text" placeholder="Nome" [(ngModel)]="name">
+                    <input type="text" placeholder="Nome" [(ngModel)]="name" [class.error]="!success">
                     <img src="../../../assets/image/person.png" alt="imagem-input" *ngIf="!name">
                 </div>
             </div>
             <div>
                 <h3>Email</h3>
                 <div class="boxInput">
-                    <input type="text" placeholder="Email" [(ngModel)]="email">
+                    <input type="text" placeholder="Email" [(ngModel)]="email" [class.error]="!success">
                     <img src="../../../assets/image/email.png" alt="imagem-input" *ngIf="!email">
                 </div>
             </div>
             <div>
                 <h3>Senha</h3>
                 <div class="boxInput">
-                    <input type="password" placeholder="Senha" [(ngModel)]="password" >
+                    <input type="password" placeholder="Senha" [(ngModel)]="password" [class.error]="!success">
                     <img src="../../../assets/image/lock.png" alt="imagem-input" *ngIf="!password">
                 </div>
+                <p class="alertError" [class.alertErrorActive]="!success">Por favor preencher todos os campos</p>
             </div>
         </div>
         <div class="boxButton">
-            <button (click)="onSignUp(email,password,name)" routerLink="/login">Cadastrar</button>
+            <button (click)="onSignUp(email,password,name)">Cadastrar</button>
         </div>
     </div>
     <div class="containImage">

@@ -8,9 +8,22 @@
     font-size: 0.8rem;
     margin-top: 10px;
     display: block;
-    color: $error;
+    color: $red;
 }
 
-.error{
-    border: 1px solid $error;
+.recoverPassword{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: rgb(37, 37, 37);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.recoverPassword:active{
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+}
+
+.error{ 
+    border: 1px solid $red;
 }

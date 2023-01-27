@@ -4,13 +4,13 @@
     width: 390px;
     padding: 0.8rem;
     color: white;
-    background-color: $button;
+    background-color: $purple;
     border: none;
     border-radius: 6px;
 }
 
 .boxButton button:active{
-    background-color: $button-active;
+    background-color: $purple-active;
 }
 
 .boxButton p{
@@ -21,9 +21,9 @@
 .boxButton a{
     font-weight: 600;
     text-decoration: none;
-    color: $link;
+    color: $blue;
 }
 
 .boxButton a:hover{
-    color: $link-active;
+    color: $blue-active;
 }

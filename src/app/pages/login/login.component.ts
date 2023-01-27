@@ -11,7 +11,9 @@ export class LoginComponent implements OnInit {
   password: string = ''
   success :boolean = true
 
-  constructor( private serviceAuthetication: AuthenticationService ) { }
+  constructor( 
+    private serviceAuthetication: AuthenticationService,
+    ) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +23,10 @@ export class LoginComponent implements OnInit {
     .then(res => {
       this.success = res
     })
+  }
+
+  recoverPassword(email: string){
+    this.serviceAuthetication.recoverPassword(email)
   }
 
 }

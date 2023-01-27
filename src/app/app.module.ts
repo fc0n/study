@@ -10,7 +10,6 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AuthenticationService } from './service/authentication.service';
 import { HomeModule } from './pages/home/home.module';
 import { FormsModule } from '@angular/forms';
-import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
